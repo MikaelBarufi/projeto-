@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Ferramentas</title>
+</head>
+<body>
+    <h1>Gerenciamento de Ferramentas</h1>
+
+    <h2>Adicionar Ferramenta</h2>
+    <form id="addToolForm">
+        <input type="text" id="nome" placeholder="Nome da Ferramenta" required>
+        <input type="number" id="quantidade" placeholder="Quantidade" required>
+        <input type="text" id="local" placeholder="Local" required>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Remover Ferramenta</h2>
+    <form id="deleteToolForm">
+        <input type="number" id="id" placeholder="ID da Ferramenta" required>
+        <button type="submit">Remover</button>
+    </form>
+
+    <h2>Usar Ferramenta</h2>
+    <form id="useToolForm">
+        <input type="number" id="ferramentaId" placeholder="ID da Ferramenta" required>
+        <input type="number" id="funcionarioId" placeholder="ID do Funcionário" required>
+        <input type="number" id="obraId" placeholder="ID da Obra" required>
+        <button type="submit">Marcar como em uso</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
