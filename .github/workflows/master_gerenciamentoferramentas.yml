@@ -21,9 +21,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run build (se aplicável)
-      run: npm run build # Remova ou modifique se o projeto não precisar de build
-
+  
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
