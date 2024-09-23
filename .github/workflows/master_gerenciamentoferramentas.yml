@@ -3,7 +3,7 @@ name: Build and Deploy to Azure App Service
 on:
   push:
     branches:
-      - master # Nome da branch que dispara o deploy, ajuste conforme necessário.
+      - main # Nome da branch que dispara o deploy, ajuste conforme necessário.
 
 jobs:
   build-and-deploy:
